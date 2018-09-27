@@ -31,9 +31,8 @@ class FragmentContainerActivity : AppCompatActivity(), View.OnClickListener {
         )
         val click:((View)->Unit) = {
             btnNex.callOnClick()
-            (it as Button).text = "ok kha"
         }
-        (this.fragments!![0] as OneFragment).onClick = click
+
         (this.fragments!![1] as TwoFragment).onClick = click
         (this.fragments!![2] as ThreeFragment).onClick = click
 
